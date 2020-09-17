@@ -1,6 +1,6 @@
 {
   "name": "@ak1nola/tiny-demo-package",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description":"Returns a list of spellings of the possible yoruba pronounciations of a word",
   "repository": "ak1nola/tiny-demo",
   "main": "index.js"
