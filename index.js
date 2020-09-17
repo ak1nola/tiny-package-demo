@@ -6,7 +6,10 @@ const options = {
 	"u":["ú", "ù"]
 };
 
-function alternates(name) {
+module.exports = function alternates(name) {
+	if (typeof name !== "string")
+		throw new TypeError("Can only generate alternates of a string");
+
 	let list=[""]; //note that we initialize with one empty string on purpose
 
 	for (let letter of name) {
@@ -32,4 +35,3 @@ function alternates(name) {
 	return list;
 }
 
-console.log(alternates("akinola").join(","));
